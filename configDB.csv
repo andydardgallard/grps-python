@@ -1,0 +1,7 @@
+service;version;config_body;status
+other;0;stringother;active
+k9s;1;"{\n    ""data"": [\n        {""key1"": ""value1""},\n        {""key2"": ""value2""},\n        {""key3"": ""value""}\n    ]\n}";active
+k8s;0;"{\n    ""data"": [\n        {""key1"": ""value1""},\n        {""key2"": ""value2""},\n        {""key3"": ""value33""}\n    ]\n}";notactive
+k8s;5;"{\n    ""data"": [\n        {""key1"": ""value1""},\n        {""key2"": ""value2""},\n        {""key3"": ""value3""}\n    ]\n}";notactive
+k8s;6;"{\n    ""data"": [\n        {""key1"": ""value1""},\n        {""key2"": ""value2""},\n        {""key3"": ""value""}\n    ]\n}";notactive
+k8s;7;"{\n    ""data"": [\n        {""key1"": ""value1""},\n        {""key2"": ""value2""},\n        {""key3"": ""value""}\n    ]\n}";active

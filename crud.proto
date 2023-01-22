@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package api;
+
+service ConfigMngmnt {
+    rpc GetConfig (getRequest) returns (getResponse) {}
+    rpc CreateConfig (createRequest) returns (createResponse) {}
+    rpc UpdateConfig (updateRequest) returns (updateResponse) {}
+    rpc DeleteConfig (deleteRequest) returns (deleteResponse) {}
+}
+
+message getRequest {
+    string service_name = 1;
+    string version = 2;
+}
+
+message getResponse {
+    string  config_body = 1;
+    string  result = 2;
+}
+
+message createRequest {
+    string service_name = 1;
+    string config_body = 2;
+}
+
+message createResponse {
+    string version = 1;
+}
+
+message updateRequest {
+    string service_name = 1;
+    string version = 2;
+    string config_body = 3;
+}
+
+message updateResponse {
+    string  result = 1;
+}
+
+message deleteRequest {
+    string service_name = 1;
+    string version = 2;
+}
+
+message deleteResponse {
+    string  result = 1;
+} 
